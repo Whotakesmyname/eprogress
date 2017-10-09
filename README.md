@@ -107,8 +107,8 @@ easy_install eprogress
      @param symbol : 进度条符号
      @param width : 进度条展示的长度
      @param title : 进度条前面展示的文字
-     @param is_2charswide : 占位符是否2字符宽，适应Windows环境下某些占位符2字符宽的显示问题
-     ```
+     @param is_2charswide : 占位符是否2字符宽，适应Windows环境下某些占位符2字符宽的显示问题
+     ```
      创建实例后调用update(progress)实例方法更新进度。
 
    - 多行进度显示使用MultiProgressManager类，实例化该类，调用put(key,progressBar)方法统一管理多个进度条，内部使用一个dict来收集进度条，多行显示的顺序为put的顺序。更新某个进度条时使用progressMangager的update(key,progress)方法，该key为put进度条时使用的key。
